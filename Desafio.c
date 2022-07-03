@@ -6,7 +6,7 @@
 //Desenvolvido por Joao Vitor Silva Lima
 /* ALgoritmo desenvolvido no compilador Dev-C++*/
 
-/*Declearando as structs dos Pontos, Par‚metros
+/*Declarando as structs dos Pontos, Par√¢metros
  e Tabela disponibilizada no .PDF*/
 typedef struct{
 	char nome_parametro [256];
@@ -29,15 +29,15 @@ typedef struct{
 }parametros_tabela;
 
 /* Declarando algumas variaveis globais, sendo elas:
-a Struct dos Pontos (aninhada com a dos Par‚metros),
+a Struct dos Pontos (aninhada com a dos Par√¢metros),
 Struct da Tabela, e "i" sendo o contador geral da
 quantidade de pontos.*/
 dados_ponto dados[100];
 parametros_tabela tabela[100];
 int i=0;
 
-/*FunÁ„o void respons·vel para printar o menu principal
-do usu·rio.*/
+/*Fun√ß√£o void respons√°vel para printar o menu principal
+do usu√°rio.*/
 void menu_de_opcao (){
 	printf("Escolha uma opcao do menu de interface:");
 	printf("\n[1] - Cadastro de Pontos;");
@@ -84,7 +84,7 @@ void tabela_da_legislacao(){
 	tabela[8].limite_aceitavel = 5;
 }
 
-/*FunÁ„o void respons·vel por limpar a tela nos Sistemas 
+/*Fun√ß√£o void respons√°vel por limpar a tela nos Sistemas 
 Operacionais Windows (32bits e 64bits) e Linux.*/
 void limpar(){
 	//sleep(1);
@@ -97,17 +97,17 @@ void limpar(){
 	#endif	
 }
 
-/*FunÁ„o void respons·vel para limpar o buffer da vari·vel char
+/*Fun√ß√£o void respons√°vel para limpar o buffer da vari√°vel char
 utilizada.*/
 void limpaBuffer(){
 	char c;
 	while((c = getchar()) != '\n' && c != EOF);
 }
 
-/*FunÁ„o void respons·vel por printar todo dado existente imputados.
-Exceto, quando n„o houver dados imputados (retornando a devida 
-reposta para o usu·rio). SequÍncia de for e if (com ou sem srtcmp) 
-utilizados para formatar (visualmente) os dados de saÌda.*/
+/*Fun√ß√£o void respons√°vel por printar todo dado existente imputados.
+Exceto, quando n√£o houver dados imputados (retornando a devida 
+reposta para o usu√°rio). Sequ√™ncia de for e if (com ou sem srtcmp) 
+utilizados para formatar (visualmente) os dados de sa√≠da.*/
 void opcao_6(){
 	int j,k,x,z=0;
 	
@@ -136,11 +136,11 @@ void opcao_6(){
 	}
 }
 
-/*FunÁ„o void respons·vel por printar os par‚metros que estirem indo 
-contra a legislaÁ„o vigente. Exceto, quando n„o houver dados/par‚metros
-imputados(retornando a devida reposta para o usu·rio), ou o usu·rio 
-prescionar '0'. SequÍncia de for e if (com ou sem srtcmp) utilizados 
-para formatar (visualmente) os dados de saÌda.*/
+/*Fun√ß√£o void respons√°vel por printar os par√¢metros que estirem indo 
+contra a legisla√ß√£o vigente. Exceto, quando n√£o houver dados/par√¢metros
+imputados(retornando a devida reposta para o usu√°rio), ou o usu√°rio 
+prescionar '0'. Sequ√™ncia de for e if (com ou sem srtcmp) utilizados 
+para formatar (visualmente) os dados de sa√≠da.*/
 void opcao_5(){
 	int a,y,j,k,x,g,h,s,z=0,r=0;	
 	a=0;
@@ -199,10 +199,10 @@ void opcao_5(){
 	}
 }
 
-/*FunÁ„o void respons·vel por printar par‚metros filtrados pela busca por
-nome. Exceto quando n„o houver par‚metros imputados(retornando a devida 
-reposta para o usu·rio), ou o usu·rio prescionar '0'. SequÍncia de for e 
-if (com ou sem srtcmp) utilizados para formatar (visualmente) os dados de saÌda.*/
+/*Fun√ß√£o void respons√°vel por printar par√¢metros filtrados pela busca por
+nome. Exceto quando n√£o houver par√¢metros imputados(retornando a devida 
+reposta para o usu√°rio), ou o usu√°rio prescionar '0'. Sequ√™ncia de for e 
+if (com ou sem srtcmp) utilizados para formatar (visualmente) os dados de sa√≠da.*/
 void opcao_4(){
 	int qnt_total_de_parametros_geral,y,a=0,j,k,x,n,g,h,z=0;
 	char parametro_pesquisado[256];
@@ -266,11 +266,11 @@ void opcao_4(){
 	}
 }
 
-/*FunÁ„o void respons·vel por printar par‚metros filtrados pela busca por
-nome. Exceto quando n„o houver pontos imputados(retornando a devida 
-reposta para o usu·rio), ou o usu·rio prescionar '0'. SequÍncia de for 
+/*Fun√ß√£o void respons√°vel por printar par√¢metros filtrados pela busca por
+nome. Exceto quando n√£o houver pontos imputados(retornando a devida 
+reposta para o usu√°rio), ou o usu√°rio prescionar '0'. Sequ√™ncia de for 
 e if (com ou sem srtcmp) utilizados para formatar (visualmente) os dados 
-de saÌda.*/
+de sa√≠da.*/
 void opcao_3(){
 	int j,z,k,x,y=0;
 	char ponto_pesquisado[256];
@@ -318,13 +318,13 @@ void opcao_3(){
 	}
 }
 
-/*FunÁ„o void respons·vel por conferir se o par‚metro imputado est· contido 
+/*Fun√ß√£o void respons√°vel por conferir se o par√¢metro imputado est√° contido 
 no banco de dados (tabela disponibilizada), e fazer o prenchimento adequando 
-das structs par‚metros e pontos (aninhadas). Est· funÁ„o est· muito 
-correlacionada com a funÁ„o void 'opcao_2' estrututura mais abaixo. Preenchimento 
-como: unidade de medida adequada, o prÛprio par‚metro, o grau de concentraÁ„o, 
-a data da coleta e a contagem de par‚metro do ponto cadastrado (tal recurso foi 
-muito utilizado para limitar alguns dos comandos de repetiÁ„o utilizados.*/
+das structs par√¢metros e pontos (aninhadas). Est√° fun√ß√£o est√° muito 
+correlacionada com a fun√ß√£o void 'opcao_2' estrututura mais abaixo. Preenchimento 
+como: unidade de medida adequada, o pr√≥prio par√¢metro, o grau de concentra√ß√£o, 
+a data da coleta e a contagem de par√¢metro do ponto cadastrado (tal recurso foi 
+muito utilizado para limitar alguns dos comandos de repeti√ß√£o utilizados.*/
 void conferir_tabela(int ponto_associado){
 	int j,k,aux=0,g=0;
 	char parametro_analisado[256];
@@ -362,7 +362,7 @@ void conferir_tabela(int ponto_associado){
 	limpar();
 }
 
-/*FunÁ„o void repons·vel pelo cadastro dos pontos. Cadastro como: nome do ponto 
+/*Fun√ß√£o void repons√°vel pelo cadastro dos pontos. Cadastro como: nome do ponto 
 e suas coordenadas. Barrando o cadastro de pontos com os mesmos nomes, ou as 
 mesmas coordenadas*/
 void opcao_1 (){
@@ -413,11 +413,11 @@ void opcao_1 (){
 	}
 }
 
-/*FunÁ„o void responv·vel por fazer o direcionamento dos par‚metros aos seus 
-devidos pontos (em coordenaÁ„o com a funÁ„o 'conferir_tabela'. Assim como 
-tambÈm, verifica se existe algum ponto cadastrado antes de cadastrar o primeiro 
-parametro. Cajo n„o haja, ela reedireciona o usuario para o cadastramento de 
-pontos (chmando a funÁ„o void 'opcao_1' '*/
+/*Fun√ß√£o void responv√°vel por fazer o direcionamento dos par√¢metros aos seus 
+devidos pontos (em coordena√ß√£o com a fun√ß√£o 'conferir_tabela'. Assim como 
+tamb√©m, verifica se existe algum ponto cadastrado antes de cadastrar o primeiro 
+parametro. Cajo n√£o haja, ela reedireciona o usuario para o cadastramento de 
+pontos (chmando a fun√ß√£o void 'opcao_1' '*/
 void opcao_2 (){
 	int ponto_associado, j,k;
 	if(i==0){
@@ -443,9 +443,9 @@ void opcao_2 (){
 	}
 }
 
-/*FunÁ„o inteira responv·vel por chamar a maior parte das funÁıes anteriormente 
-citadas, atrav·ves da seleÁ„o do usu·rio. Retornadno um valor para a funÁ„o int 
-'main'. Este valor È respons·vel por garantir que o cÛdigo ainda continue rodando 
+/*Fun√ß√£o inteira responv√°vel por chamar a maior parte das fun√ß√µes anteriormente 
+citadas, atrav√°ves da sele√ß√£o do usu√°rio. Retornadno um valor para a fun√ß√£o int 
+'main'. Este valor √© respons√°vel por garantir que o c√≥digo ainda continue rodando 
 caso haja um preenchimento incoerente do menu principal*/
 int exec_menu (){
 	int x;
